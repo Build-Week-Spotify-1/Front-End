@@ -40,6 +40,7 @@ export default function EditProfile() {
                     placeholder="password"
                     />
                 </label>
+                <button className="Button"type="submit">Submit!</button>
             </form>
             <footer>
                 copyright

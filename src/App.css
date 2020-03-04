@@ -59,6 +59,7 @@ input{
   justify-content: center;
   align-items: center;
   margin-top: 75px;
+  max-height: 100%;
   
 }
   .labels {
@@ -66,7 +67,22 @@ input{
   }
 
 .Edit-Profile{
-  background-color: rgb(32, 32, 32);
-  color: rgba(67, 255, 211, 0.938);
+  background-color: #191414;
+  color: rgb(25, 201, 86);
+  height: 1000px;
   
+}
+.Button {
+  width: 200px;
+  margin-top: 80px;
+  padding: 12px 20px;
+  border-style: none;
+  background-color: lightslategray;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
 }
