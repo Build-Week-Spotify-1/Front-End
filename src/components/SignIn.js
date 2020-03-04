@@ -23,6 +23,8 @@ background: green;
 margin: -200px, 0;
 `
 
+
+
 const useStyles = makeStyles(theme => ({
   container: {
    color: 'green',
@@ -31,14 +33,14 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
     
   },
-  image: {
-    backgroundImage: {Image},
-    backgroundRepeat: 'no-repeat',
-    backgroundColor:
-      theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
+  // image: {
+  //    backgroundImage: {Image},
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundColor:
+  //     theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
+  //   backgroundSize: 'cover',
+  //   backgroundPosition: 'center',
+  // },
   paper: {
     margin: theme.spacing(20, 4),
     display: 'flex',
@@ -67,9 +69,10 @@ export default function SignInSide() {
     <div className={classes.container}>
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item xs={false} sm={4} md={7} className={classes.image} />
+      <Grid item xs={false} sm={4} md={7} className={classes.image}> <img src="../spotify.png"/></Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
+        <img src="../spotify.png"/>
           <Avatar className={classes.avatar}>
           </Avatar>
           <Typography component="h1" variant="h5">
