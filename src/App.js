@@ -21,10 +21,10 @@ function App() {
         palette: {
           type: "dark",
           primary: {
-            main: "#99FF8A"
+            main: "#43FFD2"
           },
           secondary: {
-            main: "#6E8B3D"
+            main: "#43FFD2"
           }
         },
         typography:{}
@@ -35,8 +35,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
-    <img src="../spotify.jpg"/>
-     
+
       <Route exact path="/">
         <SignIn/>
       </Route>

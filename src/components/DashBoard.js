@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ButtonDropDown from "./ButtonDropDown";
+import '../App.css'
 
 export default function DashBoard(){
   const [search, setSearch] = useState('');
@@ -12,7 +13,6 @@ export default function DashBoard(){
   
 return (
     <section className="search-form">
-     Search For Songs Here
     <form>
       <label>
         Artist/Song:
@@ -24,13 +24,12 @@ return (
       value={ search }
       onChange={ handleChange }
       />
-
-     
       </label>
     </form>
+    <form>
+     <ButtonDropDown/>
 
-  
-
+    </form>
     </section>
 
 )
