@@ -52,3 +52,21 @@
 input{
   display: block;
 }
+
+.input-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  
+}
+  .labels {
+    margin-top: 50px;
+  }
+
+.Edit-Profile{
+  background-color: rgb(32, 32, 32);
+  color: rgba(67, 255, 211, 0.938);
+  
+}
