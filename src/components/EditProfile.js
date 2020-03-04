@@ -5,11 +5,11 @@ export default function EditProfile() {
     return (
         <section className="edit-profile">
             <header>
-                <nav>
+                <nav class="Header">
                     <a href="/"> Home </a>
                 </nav>
             </header>
-            <h1>
+            <h1 className="Title">
                 Edit Profile
             </h1>
             <form className="input-sections">
@@ -43,7 +43,7 @@ export default function EditProfile() {
                 <button className="Button"type="submit">Submit!</button>
             </form>
             <footer>
-                copyright
+               
             </footer>
         </section>
     )

@@ -53,12 +53,17 @@ input{
   display: block;
 }
 
+.Title{
+  margin-top: 60px;
+  font-size: 3rem;
+}
+
 .input-sections{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 65px;
   max-height: 100%;
   
 }
@@ -69,12 +74,17 @@ input{
 .Edit-Profile{
   background-color: #191414;
   color: rgb(25, 201, 86);
-  height: 1000px;
+  height: 100%;
   
+}
+
+.Header{
+  padding-top: 20px;
 }
 .Button {
   width: 200px;
   margin-top: 80px;
+  margin-bottom: 300px;
   padding: 12px 20px;
   border-style: none;
   background-color: lightslategray;
