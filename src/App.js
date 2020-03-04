@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+const [songList, setSongList] = 
 
   const theme = React.useMemo(
     () =>
@@ -42,8 +43,9 @@ function App() {
       <Route exact path="/SignUp">
         <SignUp/>
       </Route>
-      <Route exact path="/DashBoard">
-        <DashBoard/>
+      <Route exact path="/DashBoard" render={ ( props ) => 
+       <DashBoard {...props} setSongList={setSongList} songList={songList}/> }>
+        
       </Route>
       <Route exact path="/EditProfile">
         <EditProfile/>
