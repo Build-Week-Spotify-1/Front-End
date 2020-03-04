@@ -1,9 +1,8 @@
 import React from 'react';
 import {Avatar, Button, CssBaseline, TextField, FormControlLabel, Checkbox, Link, Grid, Box, Paper, Typography, makeStyles, Container} from '@material-ui/core/';
 import styled from "styled-components";
-import Image from "../spotify.png";
 import { green } from '@material-ui/core/colors';
-
+import Image from '../img/spotify.jpg';
 
 function Copyright() {
   return (
@@ -18,13 +17,6 @@ function Copyright() {
   );
 }
 
-const MyContainer = styled(Container)`
-background: green;
-margin: -200px, 0;
-`
-
-
-
 const useStyles = makeStyles(theme => ({
   container: {
    color: 'green',
@@ -33,14 +25,14 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
     
   },
-  // image: {
-  //    backgroundImage: {Image},
-  //   backgroundRepeat: 'no-repeat',
-  //   backgroundColor:
-  //     theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  // },
+  image: {
+     backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/541c0b85e4b03f1e8810dfc9/1562324988658-Y3TYATG7CXT5JJDW551O/ke17ZwdGBToddI8pDm48kOrmWGHb03nzwc4W1nKV7FIUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnS2h5LEY0WtYx9R4lbXnqfxRyuArMDVpduMtKJHm3CcW07ycm2Trb21kYhaLJjddA/spotify-playlist)',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor:
+      theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
   paper: {
     margin: theme.spacing(20, 4),
     display: 'flex',
@@ -69,10 +61,10 @@ export default function SignInSide() {
     <div className={classes.container}>
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item xs={false} sm={4} md={7} className={classes.image}> <img src="../spotify.png"/></Grid>
+      <Grid item xs={false} sm={4} md={7} className={classes.image}> </Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-        <img src="../spotify.png"/>
+        
           <Avatar className={classes.avatar}>
           </Avatar>
           <Typography component="h1" variant="h5">

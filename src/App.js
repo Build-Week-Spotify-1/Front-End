@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+const [songList, setSongList] = 
 
   const theme = React.useMemo(
     () =>
@@ -21,10 +22,10 @@ function App() {
         palette: {
           type: "dark",
           primary: {
-            main: "#99FF8A"
+            main: "#43FFD2"
           },
           secondary: {
-            main: "#6E8B3D"
+            main: "#43FFD2"
           }
         },
         typography:{}
@@ -35,16 +36,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
-    <img src="../spotify.jpg"/>
-     
+
       <Route exact path="/">
         <SignIn/>
       </Route>
       <Route exact path="/SignUp">
         <SignUp/>
       </Route>
-      <Route exact path="/DashBoard">
-        <DashBoard/>
+      <Route exact path="/DashBoard" render={ ( props ) => 
+       <DashBoard {...props} setSongList={setSongList} songList={songList}/> }>
+        
       </Route>
       <Route exact path="/EditProfile">
         <EditProfile/>
