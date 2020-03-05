@@ -14,16 +14,25 @@ export default function EditProfile() {
             </h1>
             <form className="input-sections">
                 <label className="labels">
-                    <h4>Name:</h4>
+                    <h4>First Name:</h4>
                     <input
-                    id="name"
+                    id="FirstName"
                     type="text"
-                    name="name"
-                    placeholder="name"
+                    name="FirstName"
+                    placeholder="First name"
                     />
                 </label>
                 <label className="labels">
-                    <h4>Username</h4>
+                    <h4>Last Name:</h4>
+                    <input
+                    id="LastName"
+                    type="text"
+                    name="LastName"
+                    placeholder="Last Name"
+                    />
+                </label>
+                <label className="labels">
+                    <h4>Username:</h4>
                     <input
                     id="username"
                     type="text"
@@ -32,7 +41,7 @@ export default function EditProfile() {
                     />
                 </label>
                 <label className="labels">
-                    <h4>Password</h4>
+                    <h4>Password:</h4>
                     <input
                     id="password"
                     type="text"
